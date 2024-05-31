@@ -1,0 +1,38 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    background: rgb(244,244,244);
+    position: relative;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+}
+
+.iconContainer{
+    padding: 20px;
+    background: white;
+    position: absolute;
+    top: -35%;
+    border-radius: 50%;
+    box-shadow: 0 -1px rgba(240, 240, 240);
+    color : #21CC7A;
+}
+.cardText{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 40px;
+    border-radius: 5px;
+}
+.card:hover{
+    background: #21CC7A;
+    color: white;
+    transition: background .3s ease-in-out;
+
+}
