@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Veli Uluğut",
+    "title": "Software & Data Engineer",
+    "description": "In <strong>software and data engineering projects</strong>, I develop scalable, performant and reliable systems with modern technologies. I create solutions that process, analyze and generate value from large datasets using <strong>Python, Golang, Docker</strong> and <strong>data pipelines</strong>.",
+    "cta": "Get in Touch",
+    "scroll": "Scroll down"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "My passion for software development and data engineering, combined with my desire to continuously learn and improve myself, drives me to do my best to produce scalable and effective solutions.",
+    "intro": "Hello! I'm <strong>Veli Uluğut</strong>, a <strong>Computer Engineering</strong> graduate and working as a <strong>Software & Data Engineer</strong>.",
+    "experience": "During my 5+ years of experience, I specialized in <strong>data engineering and software development projects</strong> and developed large-scale data systems with modern technologies.",
+    "skills": "I particularly enjoy working with <strong>Python</strong>, <strong>Golang</strong>, <strong>Apache Airflow</strong>, <strong>Docker</strong> and <strong>Oracle</strong> technologies.",
+    "passion": "Transforming large datasets into meaningful insights, optimizing ETL processes, and developing data-driven solutions are my biggest sources of motivation.",
+    "goal": "My goal is to develop projects that improve business decision-making processes through data and add value.",
+    "info": {
+      "education": {
+        "title": "Education",
+        "university": "Istanbul Technical University",
+        "degree": "Computer Engineering",
+        "years": "2016 - 2020 | GPA: 3.45"
+      },
+      "work": {
+        "title": "Work",
+        "remote": "Full Remote",
+        "flexible": "Flexible Hours"
+      },
+      "focus": {
+        "title": "Focus",
+        "main": "Data Engineering",
+        "tech": "Python, Golang, Airflow"
+      },
+      "contact": {
+        "title": "Contact",
+        "email": "veli.ulugut@gmail.com",
+        "linkedin": "linkedin.com/in/veliulugut",
+        "status": "Available for contact"
+      }
+    },
+    "approach": {
+      "title": "My Work Approach",
+      "learning": {
+        "title": "Continuous Learning",
+        "description": "I keep myself up to date in this rapidly changing field of data technologies. I love learning new data tools and methodologies."
+      },
+      "code": {
+        "title": "Clean Code",
+        "description": "I pay attention to writing readable, maintainable and testable code. I participate in code review processes for data pipelines."
+      },
+      "team": {
+        "title": "Teamwork",
+        "description": "I am a data engineer with strong communication skills, responsible and harmonious working within the team."
+      }
+    }
+  },
+  "skills": {
+    "title": "My Technology Skills",
+    "description": "Data engineering and software development technologies I have used during my 5+ years of experience. I've indicated my experience range based on my usage duration for each technology.",
+    "years": "years",
+    "categories": {
+      "programming": "Programming Languages",
+      "databases": "Databases & Storage",
+      "dataengineering": "Data Engineering",
+      "cloud": "Cloud & DevOps",
+      "tools": "Development Tools",
+      "visualization": "Data Visualization",
+      "project": "Project Management"
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "description": "Data engineering and software development experiences I gained at international companies during my 5+ year journey",
+    "present": "Present",
+    "experiences": {
+      "datatech": {
+        "company": "DataTech Solutions",
+        "position": "Senior Data Engineer",
+        "period": "January 2024 - Present",
+        "location": "Istanbul, TR (Remote)",
+        "description": [
+          "Design and development of ETL pipelines processing 10TB+ daily data",
+          "Orchestration of complex data workflows with Apache Airflow",
+          "Development of high-performance data processing services with Python and Golang",
+          "Data modeling and optimization in Oracle, PostgreSQL and MongoDB databases",
+          "Deployment of containerized data services with Docker and Kubernetes",
+          "Apache Kafka implementation for real-time streaming data processing",
+          "Setup of data quality monitoring and automated testing processes"
+        ]
+      },
+      "bigtech": {
+        "company": "BigTech Analytics",
+        "position": "Data Engineer",
+        "period": "March 2022 - December 2023",
+        "location": "California, US (Remote)",
+        "description": [
+          "Large-scale data preparation and preprocessing for machine learning pipelines",
+          "Development of distributed data processing systems with Apache Spark",
+          "AWS S3, Redshift and Snowflake integrations",
+          "Complex data transformation and aggregation with Python and SQL",
+          "Real-time data streaming implementation for analytics dashboards",
+          "Implementation of data governance and security protocols"
+        ]
+      },
+      "fintech": {
+        "company": "FinTech Data Solutions",
+        "position": "Backend Data Engineer",
+        "period": "June 2021 - February 2022",
+        "location": "İstanbul, TR (Hybrid)",
+        "description": [
+          "Development of ETL pipelines for financial data analysis",
+          "Performance optimization in Oracle and PostgreSQL databases",
+          "Development of high concurrent data APIs with Golang",
+          "Event-driven architecture implementation with Apache Kafka",
+          "Automated deployment with Docker and CI/CD pipelines",
+          "Data warehouse modeling and dimensional modeling"
+        ]
+      },
+      "startup": {
+        "company": "DataFlow Startup",
+        "position": "Junior Data Engineer",
+        "period": "September 2020 - May 2021",
+        "location": "İstanbul, TR (On-site)",
+        "description": [
+          "Development of web scraping and data collection systems",
+          "Python-based data cleaning and preprocessing pipelines",
+          "MySQL and PostgreSQL database design and optimization",
+          "REST API integrations with external data sources",
+          "Tableau and Power BI dashboards for data visualization",
+          "Experience with Git workflow and agile development processes"
+        ]
+      },
+      "university": {
+        "company": "ITU Computer Engineering",
+        "position": "Research Assistant (Part-time)",
+        "period": "February 2020 - August 2020",
+        "location": "İstanbul, TR (On-site)",
+        "description": [
+          "Machine learning algorithms research on large datasets",
+          "Statistical analysis and data modeling with Python and R",
+          "Data analysis and visualization for academic papers",
+          "Database optimization and query performance tuning",
+          "Data science mentoring for student projects",
+          "Experience in research methodologies and academic writing"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's Get in Touch",
+    "description": "Don't hesitate to contact me about data engineering projects, collaboration opportunities or any other matter. Together we can develop data-driven solutions and add value to businesses.",
+    "info": {
+      "title": "Contact Information",
+      "description": "As a <strong>Software & Data Engineer</strong>, I have 5+ years of experience in data engineering and software development projects. I develop scalable systems with Python, Golang and modern data technologies. I have experience in remote work and international projects.",
+      "email": "Email",
+      "location": "Location",
+      "locationValue": "Istanbul, Turkey",
+      "social": "Social Media"
+    },
+    "form": {
+      "title": "Send Message",
+      "name": "Name",
+      "email": "Email", 
+      "message": "Message",
+      "namePlaceholder": "Your name and surname",
+      "emailPlaceholder": "email@example.com",
+      "messagePlaceholder": "Your message...",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "title": "Software & Data Engineer",
+    "built": "Built with React + TypeScript + Tailwind",
+    "copyright": "Made by"
+  }
+} 

@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "experience": "Deneyim",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "greeting": "Merhaba, ben",
+    "name": "Veli Uluğut",
+    "title": "Software ve Data Engineer",
+    "description": "<strong>Yazılım ve veri mühendisliği projelerinde</strong>, modern teknolojilerle ölçeklenebilir, performanslı ve güvenilir sistemler geliştiriyorum. <strong>Python, Golang, Docker</strong> ve <strong>veri pipeline'ları</strong> ile büyük veri setlerini işleyen, analiz eden ve değer üreten çözümler sunuyorum.",
+    "cta": "İletişime Geç",
+    "scroll": "Aşağı kaydır"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "description": "Yazılım geliştirme ve veri mühendisliği konusundaki tutkum, sürekli öğrenme ve kendimi geliştirme arzumla birleşince, ölçeklenebilir ve etkili çözümler üretmek için elimden gelenin en iyisini yapıyorum.",
+    "intro": "Merhaba! Ben <strong>Veli Uluğut</strong>, <strong>Bilgisayar Mühendisliği</strong> mezunu ve <strong>Software ve Data Engineer</strong> olarak çalışıyorum.",
+    "experience": "5+ yıllık deneyimim boyunca <strong>veri mühendisliği ve yazılım geliştirme projelerinde</strong> uzmanlaştım ve modern teknolojilerle büyük ölçekli veri sistemleri geliştirdim.",
+    "skills": "Özellikle <strong>Python</strong>, <strong>Golang</strong>, <strong>Apache Airflow</strong>, <strong>Docker</strong> ve <strong>Oracle</strong> teknolojileriyle çalışmaktan keyif alıyorum.",
+    "passion": "Büyük veri setlerini anlamlı bilgilere dönüştürmek, ETL süreçlerini optimize etmek ve veri odaklı çözümler geliştirmek benim en büyük motivasyon kaynağım.",
+    "goal": "Amacım, veri ile işletmelerin karar verme süreçlerini iyileştiren, değer katan projeler geliştirmek.",
+    "info": {
+      "education": {
+        "title": "Eğitim",
+        "university": "İstanbul Teknik Üniversitesi",
+        "degree": "Bilgisayar Mühendisliği",
+        "years": "2016 - 2020 | GPA: 3.45"
+      },
+      "work": {
+        "title": "Çalışma",
+        "remote": "Full Remote",
+        "flexible": "Esnek Saatler"
+      },
+      "focus": {
+        "title": "Odak",
+        "main": "Data Engineering",
+        "tech": "Python, Golang, Airflow"
+      },
+      "contact": {
+        "title": "İletişim",
+        "email": "veli.ulugut@gmail.com",
+        "linkedin": "linkedin.com/in/veliulugut",
+        "status": "İletişime açık"
+      }
+    },
+    "approach": {
+      "title": "Çalışma Yaklaşımım",
+      "learning": {
+        "title": "Sürekli Öğrenme",
+        "description": "Veri teknolojilerinin hızla değiştiği bu alanda kendimi güncel tutuyorum. Yeni veri araçları ve methodolojileri öğrenmeyi seviyorum."
+      },
+      "code": {
+        "title": "Temiz Kod",
+        "description": "Okunabilir, sürdürülebilir ve test edilebilir kod yazmaya özen gösteriyorum. Veri pipeline'larında code review süreçlerine katılırım."
+      },
+      "team": {
+        "title": "Ekip Çalışması",
+        "description": "İletişim becerileri güçlü, sorumluluk sahibi ve ekip içinde uyumlu çalışan bir veri mühendisiyim."
+      }
+    }
+  },
+  "skills": {
+    "title": "Teknoloji Yetkinliklerim",
+    "description": "5+ yıllık deneyimim boyunca kullandığım veri mühendisliği ve yazılım geliştirme teknolojileri. Her teknoloji için kullanım süreme göre deneyim aralığımı belirttim.",
+    "years": "yıl",
+    "categories": {
+      "programming": "Programlama Dilleri",
+      "databases": "Veritabanları & Storage", 
+      "dataengineering": "Veri Mühendisliği",
+      "cloud": "Cloud & DevOps",
+      "tools": "Geliştirme Araçları",
+      "visualization": "Veri Görselleştirme",
+      "project": "Proje Yönetimi"
+    }
+  },
+  "experience": {
+    "title": "Profesyonel Deneyimim",
+    "description": "5+ yıllık süreçte uluslararası şirketlerde kazandığım veri mühendisliği ve yazılım geliştirme deneyimleri",
+    "present": "Günümüz",
+    "experiences": {
+      "datatech": {
+        "company": "DataTech Solutions",
+        "position": "Senior Data Engineer",
+        "period": "Ocak 2024 - Günümüz",
+        "location": "İstanbul, TR (Remote)",
+        "description": [
+          "Günlük 10TB+ veri işleyen ETL pipeline'larının tasarımı ve geliştirilmesi",
+          "Apache Airflow ile kompleks veri workflow'larının orchestration'ı",
+          "Python ve Golang ile yüksek performanslı data processing servislerinin geliştirilmesi",
+          "Oracle, PostgreSQL ve MongoDB veritabanlarında veri modelleme ve optimizasyon",
+          "Docker ve Kubernetes ile containerized veri servislerinin deployment'ı",
+          "Real-time streaming data processing için Apache Kafka implementasyonu",
+          "Data quality monitoring ve automated testing süreçlerinin kurulumu"
+        ]
+      },
+      "bigtech": {
+        "company": "BigTech Analytics",
+        "position": "Data Engineer",
+        "period": "Mart 2022 - Aralık 2023",
+        "location": "California, US (Remote)",
+        "description": [
+          "Machine learning pipeline'ları için büyük ölçekli veri hazırlama ve preprocessing",
+          "Apache Spark ile distributed data processing sistemlerinin geliştirilmesi",
+          "AWS S3, Redshift ve Snowflake entegrasyonları",
+          "Python ve SQL ile kompleks data transformation ve aggregation işlemleri",
+          "Real-time analytics dashboard'ları için data streaming implementasyonu",
+          "Data governance ve security protokollerinin uygulanması"
+        ]
+      },
+      "fintech": {
+        "company": "FinTech Data Solutions",
+        "position": "Backend Data Engineer",
+        "period": "Haziran 2021 - Şubat 2022",
+        "location": "İstanbul, TR (Hybrid)",
+        "description": [
+          "Finansal veri analizi için ETL pipeline'larının geliştirilmesi",
+          "Oracle ve PostgreSQL veritabanlarında performans optimizasyonu",
+          "Golang ile yüksek concurrent data API'larının geliştirilmesi",
+          "Apache Kafka ile event-driven architecture implementasyonu",
+          "Docker ve CI/CD pipeline'ları ile automated deployment",
+          "Data warehouse modellemesi ve dimensional modeling"
+        ]
+      },
+      "startup": {
+        "company": "DataFlow Startup",
+        "position": "Junior Data Engineer",
+        "period": "Eylül 2020 - Mayıs 2021",
+        "location": "İstanbul, TR (On-site)",
+        "description": [
+          "Web scraping ve data collection sistemlerinin geliştirilmesi",
+          "Python ile data cleaning ve preprocessing pipeline'ları",
+          "MySQL ve PostgreSQL veritabanı tasarımı ve optimizasyon",
+          "REST API'lar ile external data source entegrasyonları",
+          "Data visualization için Tableau ve Power BI dashboard'ları",
+          "Git workflow ve agile development süreçlerinde deneyim"
+        ]
+      },
+      "university": {
+        "company": "İTÜ Bilgisayar Mühendisliği",
+        "position": "Research Assistant (Part-time)",
+        "period": "Şubat 2020 - Ağustos 2020",
+        "location": "İstanbul, TR (On-site)",
+        "description": [
+          "Büyük veri setleri üzerinde machine learning algoritmaları araştırması",
+          "Python ve R ile istatistiksel analiz ve data modeling",
+          "Academic paper'lar için veri analizi ve görselleştirme",
+          "Database optimization ve query performance tuning",
+          "Student projelerinde data science mentoring",
+          "Research methodologies ve academic writing deneyimi"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "İletişime Geçelim",
+    "description": "Veri mühendisliği projeleri, iş birliği fırsatları veya herhangi bir konuda benimle iletişime geçmekten çekinmeyin. Birlikte veri odaklı çözümler geliştirebilir, işletmelere değer katabiliriz.",
+    "info": {
+      "title": "İletişim Bilgileri",
+      "description": "<strong>Software ve Data Engineer</strong> olarak veri mühendisliği ve yazılım geliştirme projelerinde 5+ yıllık deneyimim var. Python, Golang ve modern veri teknolojileriyle ölçeklenebilir sistemler geliştiriyorum. Remote çalışma ve uluslararası projeler konusunda deneyimliyim.",
+      "email": "Email",
+      "location": "Konum",
+      "locationValue": "İstanbul, Türkiye",
+      "social": "Sosyal Medya"
+    },
+    "form": {
+      "title": "Mesaj Gönder",
+      "name": "İsim",
+      "email": "Email",
+      "message": "Mesaj",
+      "namePlaceholder": "Adınız ve soyadınız",
+      "emailPlaceholder": "email@example.com",
+      "messagePlaceholder": "İletmek istediğiniz mesajınız...",
+      "send": "Mesaj Gönder"
+    }
+  },
+  "footer": {
+    "title": "Software ve Data Engineer",
+    "built": "React + TypeScript + Tailwind ile geliştirildi",
+    "copyright": "Made by"
+  }
+} 
