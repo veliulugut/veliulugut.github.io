@@ -10,10 +10,93 @@ import {
   Wrench,
   GitBranch
 } from 'lucide-react'
+// Teknoloji ikonları için react-icons
+import { 
+  SiGo, 
+  SiPython, 
+  SiApacheairflow, 
+  SiOracle,
+  SiPostgresql,
+  SiMongodb,
+  SiRedis,
+  SiElasticsearch,
+  SiApachekafka,
+  SiApachespark,
+  SiDocker,
+  SiKubernetes,
+  SiTerraform,
+  SiGit,
+  SiLinux,
+  SiJupyter,
+  SiPostman,
+  SiTableau,
+  SiGrafana,
+  SiPlotly,
+  SiMysql,
+  SiAmazons3,
+  SiGooglecloud,
+  SiGithubactions,
+  SiJira,
+  SiConfluence,
+  SiApachecassandra,
+  SiSupabase
+} from 'react-icons/si'
+import { DiJava, DiScala } from 'react-icons/di'
+import { FaR, FaDatabase, FaCode, FaUsers, FaFile } from 'react-icons/fa6'
 
 const Skills = () => {
   const { t } = useTranslation()
   const { theme } = useTheme()
+
+  // Teknoloji isimlerine göre ikon eşleştirme fonksiyonu
+  const getTechIcon = (techName: string) => {
+    const iconMap: { [key: string]: JSX.Element } = {
+      'Python': <SiPython className={`w-5 h-5 ${theme === 'light' ? 'text-blue-600' : 'text-blue-400'}`} />,
+      'Golang': <SiGo className={`w-5 h-5 ${theme === 'light' ? 'text-cyan-600' : 'text-cyan-400'}`} />,
+      'Apache Airflow': <SiApacheairflow className={`w-5 h-5 ${theme === 'light' ? 'text-red-600' : 'text-red-400'}`} />,
+      'Oracle': <SiOracle className={`w-5 h-5 ${theme === 'light' ? 'text-red-700' : 'text-red-500'}`} />,
+      'PostgreSQL': <SiPostgresql className={`w-5 h-5 ${theme === 'light' ? 'text-blue-700' : 'text-blue-400'}`} />,
+      'MongoDB': <SiMongodb className={`w-5 h-5 ${theme === 'light' ? 'text-green-600' : 'text-green-400'}`} />,
+      'Redis': <SiRedis className={`w-5 h-5 ${theme === 'light' ? 'text-red-600' : 'text-red-400'}`} />,
+      'Elasticsearch': <SiElasticsearch className={`w-5 h-5 ${theme === 'light' ? 'text-yellow-600' : 'text-yellow-400'}`} />,
+      'Apache Kafka': <SiApachekafka className={`w-5 h-5 ${theme === 'light' ? 'text-gray-700' : 'text-gray-300'}`} />,
+      'Apache Spark': <SiApachespark className={`w-5 h-5 ${theme === 'light' ? 'text-orange-600' : 'text-orange-400'}`} />,
+      'Docker': <SiDocker className={`w-5 h-5 ${theme === 'light' ? 'text-blue-600' : 'text-blue-400'}`} />,
+      'Kubernetes': <SiKubernetes className={`w-5 h-5 ${theme === 'light' ? 'text-blue-700' : 'text-blue-400'}`} />,
+      'Terraform': <SiTerraform className={`w-5 h-5 ${theme === 'light' ? 'text-purple-700' : 'text-purple-400'}`} />,
+      'Git & GitHub': <SiGit className={`w-5 h-5 ${theme === 'light' ? 'text-orange-700' : 'text-orange-400'}`} />,
+      'Linux/Unix': <SiLinux className={`w-5 h-5 ${theme === 'light' ? 'text-yellow-700' : 'text-yellow-400'}`} />,
+      'Jupyter': <SiJupyter className={`w-5 h-5 ${theme === 'light' ? 'text-orange-600' : 'text-orange-400'}`} />,
+      'Postman': <SiPostman className={`w-5 h-5 ${theme === 'light' ? 'text-orange-600' : 'text-orange-400'}`} />,
+      'Tableau': <SiTableau className={`w-5 h-5 ${theme === 'light' ? 'text-blue-700' : 'text-blue-400'}`} />,
+      'Grafana': <SiGrafana className={`w-5 h-5 ${theme === 'light' ? 'text-orange-600' : 'text-orange-400'}`} />,
+      'Plotly': <SiPlotly className={`w-5 h-5 ${theme === 'light' ? 'text-blue-600' : 'text-blue-400'}`} />,
+      'Java': <DiJava className={`w-5 h-5 ${theme === 'light' ? 'text-red-700' : 'text-red-400'}`} />,
+      'R': <FaR className={`w-5 h-5 ${theme === 'light' ? 'text-blue-700' : 'text-blue-400'}`} />,
+      'Scala': <DiScala className={`w-5 h-5 ${theme === 'light' ? 'text-red-700' : 'text-red-400'}`} />,
+      'SQL': <SiMysql className={`w-5 h-5 ${theme === 'light' ? 'text-blue-700' : 'text-blue-400'}`} />,
+      'Cassandra': <SiApachecassandra className={`w-5 h-5 ${theme === 'light' ? 'text-yellow-600' : 'text-yellow-400'}`} />,
+      'ETL/ELT Pipelines': <FaDatabase className={`w-5 h-5 ${theme === 'light' ? 'text-purple-700' : 'text-purple-400'}`} />,
+      'Data Modeling': <FaDatabase className={`w-5 h-5 ${theme === 'light' ? 'text-green-700' : 'text-green-400'}`} />,
+      'AWS': <SiAmazons3 className={`w-5 h-5 ${theme === 'light' ? 'text-orange-700' : 'text-orange-400'}`} />,
+      'Google Cloud': <SiGooglecloud className={`w-5 h-5 ${theme === 'light' ? 'text-blue-700' : 'text-blue-400'}`} />,
+      'CI/CD': <SiGithubactions className={`w-5 h-5 ${theme === 'light' ? 'text-gray-700' : 'text-gray-300'}`} />,
+      'VS Code': <FaCode className={`w-5 h-5 ${theme === 'light' ? 'text-blue-700' : 'text-blue-400'}`} />,
+      'DBeaver': <FaDatabase className={`w-5 h-5 ${theme === 'light' ? 'text-orange-700' : 'text-orange-400'}`} />,
+      'Power BI': <FaCode className={`w-5 h-5 ${theme === 'light' ? 'text-yellow-700' : 'text-yellow-400'}`} />,
+      'Matplotlib/Seaborn': <SiPython className={`w-5 h-5 ${theme === 'light' ? 'text-blue-700' : 'text-blue-400'}`} />,
+      'Apache Superset': <SiSupabase className={`w-5 h-5 ${theme === 'light' ? 'text-green-700' : 'text-green-400'}`} />,
+      'Scrum': <FaUsers className={`w-5 h-5 ${theme === 'light' ? 'text-purple-700' : 'text-purple-400'}`} />,
+      'Agile Development': <FaUsers className={`w-5 h-5 ${theme === 'light' ? 'text-blue-700' : 'text-blue-400'}`} />,
+      'Remote Collaboration': <FaUsers className={`w-5 h-5 ${theme === 'light' ? 'text-green-700' : 'text-green-400'}`} />,
+      'JIRA': <SiJira className={`w-5 h-5 ${theme === 'light' ? 'text-blue-700' : 'text-blue-400'}`} />,
+      'Confluence': <SiConfluence className={`w-5 h-5 ${theme === 'light' ? 'text-blue-700' : 'text-blue-400'}`} />,
+      'Data Documentation': <FaFile className={`w-5 h-5 ${theme === 'light' ? 'text-gray-700' : 'text-gray-400'}`} />,
+      'dbt': <FaDatabase className={`w-5 h-5 ${theme === 'light' ? 'text-orange-700' : 'text-orange-400'}`} />,
+    }
+    
+    return iconMap[techName] || null
+  }
 
   const skillCategories = [
     {
@@ -140,9 +223,9 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={`backdrop-blur-sm rounded-xl p-6 border transition-all duration-300 ${
+              className={`backdrop-blur-sm rounded-xl p-6 border transition-all duration-300 cursor-pointer perspective-1000 preserve-3d ${
                 theme === 'light'
-                  ? 'bg-white/80 border-gray-200 hover:border-gray-300 hover:shadow-lg'
+                  ? 'bg-white/90 border-gray-200 hover:border-blue-300 hover:shadow-xl shadow-lg'
                   : 'bg-slate-800/50 border-slate-700 hover:border-slate-600'
               }`}
             >
@@ -156,27 +239,38 @@ const Skills = () => {
               </div>
 
               <div className="space-y-4">
-                {category.skills.map((skill, skillIndex) => (
-                  <motion.div
-                    key={skill.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: skillIndex * 0.1 }}
-                    viewport={{ once: true }}
-                    className={`flex justify-between items-center py-2 px-3 rounded-lg transition-colors duration-300 ${
-                      theme === 'light'
-                        ? 'bg-gray-100/60 hover:bg-gray-200/60'
-                        : 'bg-slate-700/30 hover:bg-slate-700/50'
-                    }`}
-                  >
-                    <span className={`font-medium text-sm ${
-                      theme === 'light' ? 'text-gray-800' : 'text-gray-300'
-                    }`}>{skill.name}</span>
-                    <span className={`text-xs font-mono ${
-                      theme === 'light' ? 'text-gray-600' : 'text-gray-400'
-                    }`}>{skill.years}</span>
-                  </motion.div>
-                ))}
+                {category.skills.map((skill, skillIndex) => {
+                   // Özel animasyon için belirli teknolojileri belirliyoruz
+                   const hasSpecialRotation = ['Python', 'Golang', 'Apache Airflow', 'Oracle'].includes(skill.name);
+                   
+                   return (
+                    <motion.div
+                      key={skill.name}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: skillIndex * 0.1 }}
+                      viewport={{ once: true }}
+                      className={`flex justify-between items-center py-2 px-3 rounded-lg transition-colors duration-300 ${
+                        hasSpecialRotation ? 'perspective-1000 preserve-3d' : ''
+                      } ${
+                        theme === 'light'
+                          ? 'bg-gray-50/80 hover:bg-blue-50/80 border border-gray-100 hover:border-blue-200'
+                          : 'bg-slate-700/30 hover:bg-slate-700/50'
+                      }`}
+                      style={hasSpecialRotation ? { transformStyle: 'preserve-3d' } : {}}
+                    >
+                      <div className="flex items-center gap-2">
+                        {getTechIcon(skill.name)}
+                        <span className={`font-medium text-sm ${
+                          theme === 'light' ? 'text-gray-800' : 'text-gray-300'
+                        }`}>{skill.name}</span>
+                      </div>
+                      <span className={`text-xs font-mono ${
+                        theme === 'light' ? 'text-gray-600' : 'text-gray-400'
+                      }`}>{skill.years}</span>
+                    </motion.div>
+                  );
+                })}
               </div>
             </motion.div>
           ))}

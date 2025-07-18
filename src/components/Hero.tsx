@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next'
 import { getIconComponent, socialLinksData } from '../utils/constant'
 import { useTheme } from '../contexts/ThemeContext'
 import { ArrowRight } from 'lucide-react'
+// Teknoloji ikonları
+import { SiGo, SiPython, SiApacheairflow, SiOracle } from 'react-icons/si'
 
 
 const Hero = () => {
@@ -174,33 +176,41 @@ const Hero = () => {
             <motion.div
               animate={{ y: [-10, 10, -10] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-8 -right-8 w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg"
+              className={`absolute -top-8 -right-8 w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center ${
+                theme === 'light' ? 'shadow-xl' : 'shadow-lg'
+              }`}
             >
-              <span className="text-white font-bold text-sm">Python</span>
+              <SiGo className="text-white w-8 h-8" />
             </motion.div>
             
             <motion.div
               animate={{ y: [10, -10, 10] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              className="absolute top-20 -left-8 w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-xl flex items-center justify-center shadow-lg"
+              className={`absolute top-20 -left-8 w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-xl flex items-center justify-center ${
+                theme === 'light' ? 'shadow-xl' : 'shadow-lg'
+              }`}
             >
-              <span className="text-white font-bold text-lg">Go</span>
+              <SiPython className="text-white w-8 h-8" />
             </motion.div>
             
             <motion.div
               animate={{ y: [-10, 10, -10] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute bottom-20 -right-8 w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg"
+              className={`absolute bottom-20 -right-8 w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center ${
+                theme === 'light' ? 'shadow-xl' : 'shadow-lg'
+              }`}
             >
-              <span className="text-white font-bold text-sm">Oracle</span>
+              <SiOracle className="text-white w-8 h-8" />
             </motion.div>
             
             <motion.div
               animate={{ y: [10, -10, 10] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
-              className="absolute -bottom-8 -left-8 w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center shadow-lg"
+              className={`absolute -bottom-8 -left-8 w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center ${
+                theme === 'light' ? 'shadow-xl' : 'shadow-lg'
+              }`}
             >
-              <span className="text-white font-bold text-xs">Airflow</span>
+              <SiApacheairflow className="text-white w-8 h-8" />
             </motion.div>
           </div>
         </motion.div>
