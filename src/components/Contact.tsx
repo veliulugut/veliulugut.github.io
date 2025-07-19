@@ -16,7 +16,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // Form submission logic would go here
-    const mailtoLink = `mailto:suzanbulbl@gmail.com?subject=Portfolio İletişim: ${formData.name}&body=${formData.message}%0D%0A%0D%0AKimden: ${formData.name}%0D%0AEmail: ${formData.email}`
+    const mailtoLink = `mailto:veliulugut1@gmail.com?subject=Portfolio İletişim: ${formData.name}&body=${formData.message}%0D%0A%0D%0AKimden: ${formData.name}%0D%0AEmail: ${formData.email}`
     window.open(mailtoLink, '_blank')
     
     // Reset form
@@ -33,14 +33,13 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: t('contact.info.email'),
-      info: 'suzanbulbl@gmail.com',
-      link: 'mailto:suzanbulbl@gmail.com',
-      color: 'from-blue-500 to-cyan-500'
+      label: t('contact.info.email'),
+      info: 'veliulugut1@gmail.com',
+      link: 'mailto:veliulugut1@gmail.com',
     },
     {
       icon: MapPin,
-      title: t('contact.info.location'),
+      label: t('contact.info.location'),
       info: t('contact.info.locationValue'),
       link: '#',
       color: 'from-purple-500 to-pink-500'
@@ -88,7 +87,7 @@ const Contact = () => {
             <div className="space-y-6">
               {contactInfo.map((item, index) => (
                 <motion.div
-                  key={item.title}
+                  key={item.label}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -99,7 +98,7 @@ const Contact = () => {
                     <item.icon size={24} className="text-white" />
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold mb-1">{item.title}</h4>
+                    <h4 className="text-white font-semibold mb-1">{item.label}</h4>
                     {item.link !== '#' ? (
                       <a
                         href={item.link}

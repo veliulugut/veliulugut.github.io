@@ -19,7 +19,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-center md:text-left"
           >
-            <h3 className="text-2xl font-bold gradient-text mb-2">Suzan Bülbül</h3>
+            <h3 className="text-2xl font-bold gradient-text mb-2">Veli Uluğut</h3>
             <p className="text-gray-400">{t('footer.title')}</p>
           </motion.div>
 
@@ -63,12 +63,12 @@ const Footer = () => {
             </p>
             <p className="text-gray-400 flex items-center justify-center md:justify-end gap-1 mt-2">
               © {currentYear} {t('footer.copyright')}   <a 
-                href="https://linkedin.com/in/suzanbulbul" 
+                href="https://www.linkedin.com/in/veliulugut/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 transition-colors duration-300 hover:underline"
               >
-                Suzan Bülbül
+                Veli Uluğut
               </a>{' '}
             </p>
           </motion.div>

@@ -12,7 +12,7 @@ export const socialLinksData = [
     {
       iconName: 'Linkedin',
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/veliulugut',
+      url: 'https://www.linkedin.com/in/veliulugut/',
       bgColor: 'hover:bg-blue-600',
       iconColor: 'group-hover:text-blue-400'
     },
@@ -33,7 +33,7 @@ export const socialLinksData = [
     {
       iconName: 'Mail',
       name: 'Email',
-      url: 'mailto:veli.ulugut@gmail.com',
+      url: 'mailto:veliulugut1@gmail.com',
       bgColor: 'hover:bg-purple-600',
       iconColor: 'group-hover:text-purple-400'
     }
